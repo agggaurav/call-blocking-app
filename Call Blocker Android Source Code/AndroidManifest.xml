@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.blockcall"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:hasCode="true"
+        android:icon="@drawable/download"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="com.example.blockcall.Blocker" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.PHONE_STATE" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.blockcall.Blockers"
+            android:icon="@drawable/download"
+            android:label="CALL BLOCKER" >
+        </activity>
+        <activity
+            android:name="com.example.blockcall.NumberList"
+            android:label="CALL BLOCKER"
+            android:theme="@android:style/Theme.Light" >
+        </activity>
+        <activity
+            android:name="com.example.blockcall.ListActivity"
+            android:label="CALL BLOCKER" >
+        </activity>
+        <activity
+            android:name="com.example.blockcall.LoginActivity"
+            android:label="CALL BLOCKER" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.blockcall.Logout"
+            android:label="CALL BLOCKER" >
+        </activity>
+        <activity android:name="com.example.blockcall.SignUp" >
+           
+        </activity>
+        <activity
+            android:name="com.example.blockcall.Home"
+            android:label="CALL BLOCKER"      >
+            
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:shrinkColumns="2"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/images"
+            android:gravity="center_horizontal"
+            android:minHeight="150px" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_span="6"
+                android:gravity="center"
+              
+                android:text="CALL BLOCKER"
+                android:textSize="30dp"
+                 android:textColor="#FFFFF0"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/radGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+         android:paddingLeft="50dp"
+        android:layout_gravity="center_horizontal" >
+
+        <RadioButton
+            android:id="@+id/blockAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textSize="30dp"
+             android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+            android:text="Block All Calls"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/blockUnsaved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block Unsaved Contacts"
+            android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+             android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/blockFromList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block From List"
+             android:textSize="30dp"
+             android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+            android:textStyle="bold" />
+         <RadioButton
+            android:id="@+id/cancelBlocker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel All Block"
+android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+             android:textSize="30dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="30dp"
+            android:text="Add Number" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Show List" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+  
